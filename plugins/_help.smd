@@ -16,15 +16,15 @@
 //                                                                                                      //
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
 *
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @project_name : Venom-Md
+   * @author : TRYTØN
    * @youtube : https://www.youtube.com/@SuhailTechInfo
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
+   * @description : Venom-Md ,A Multi-functional whatsapp user bot.
    * @version 1.2.8-pdm
 *
 * 
-   * Created By Suhail Tech Info.
-   * © 2024 Suhail-Md.
+   * Created By TRYTØN.
+   * © 2024 Venom-Md.
  ⛥┌┤
  */
  
@@ -53,7 +53,7 @@
 /*
 let "USER_IMAGES" = {
       "description": "Put IMAGES/VIDEOS URL, Make Sure Url have extention like .mp4,.jpg,.png etc",
-      "value": "https://telegra.ph/file/d90855d13352c8aae3981.mp4",
+      "value": "https://mallucampaign.in/images/img_1709122928.jpg",
       "required" :false
     },
 */
