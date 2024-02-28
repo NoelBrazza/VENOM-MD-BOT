@@ -1,9 +1,9 @@
 {
-  "name": "suhail-md@1.2.8",
-  "description": "I am Suhail-Md Whatsapp Chuddy Buddy built in NodeJs to make experience better\n\t if Any Problem : www.youtube.com/c/SuhailTechInfo",
-  "logo": "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg",
-  "keywords": ["whatsappbot", "suhailMd", "suhail Md bot", "Suhail-Md", "SuhailMdWhatsaooBot", "SuhailWaBot","SuhailMD","Suhail Md Whatsapp Bot","multi device"],
-  "success_url": "/suhail/",
+  "name": "Venom-md@1.2.8",
+  "description": "I am Venom-Md Whatsapp Chuddy Buddy built in NodeJs to make experience better\n\t if Any Problem : www.youtube.com/c/SuhailTechInfo",
+  "logo": "https://mallucampaign.in/images/img_1709122928.jpg",
+  "keywords": ["whatsappbot", "VenomMd", "Venom Md bot", "Venom-Md", "VenomMdWhatsaooBot", "VenomWaBot","VenomMD","Venom Md Whatsapp Bot","multi device"],
+  "success_url": "/Venom/",
   "app_url": "/qr/",
   
   "env": {
@@ -27,12 +27,12 @@
     "BOT_NAME": {
       "description": " NAME FOR BOT",
       "required" :false,    
-      "value": "sᴜʜᴀɪʟ-ᴍᴅ"
+      "value": "Venom"
     }, 
     "IMAGE": {
       "description": "Image for bot",
       "required" :false,    
-      "value": "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg"
+      "value": "https://mallucampaign.in/images/img_1709122928.jpg"
     }, 
     "TZ": {
       "description": "Put TIME_ZONE according to your location",
