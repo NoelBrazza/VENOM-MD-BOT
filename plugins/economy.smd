@@ -16,20 +16,20 @@
 //                                                                                                      //
 //══════════════════════════════════════════════════════════════════════════════════════════════════════//
 *
-   * @project_name : Suhail-Md
-   * @author : Suhail Tech Info
+   * @project_name : Venom-Md
+   * @author : TRYTØN
    * @youtube : https://www.youtube.com/@SuhailTechInfo
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
+   * @description : Venom-Md ,A Multi-functional whatsapp user bot.
    * @version 1.2.8
 *
 * 
-   * Created By Suhail Tech Info.
-   * © 2024 Suhail-Md.
+   * Created By TRYTØN.
+   * © 2024 Venom-Md.
 */
 
 
 
-let Suhail_Md = "Suhail MD Whatsapp bot md"
+let Venom_Md = "Venom MD Whatsapp bot md"
 
  
 
@@ -93,7 +93,7 @@ smd({
         let zerogroup = await sck.findOne({  id: chat,   }) || {}
         if (zerogroup?.economy == "false") return reply("*🚦Economy* is not active in current group.");
         if (!isGroup) return reply(tlang().group);
-        const daily  = await eco.daily(sender, "Suhail", 500); //give 500 for daily, can be changed
+        const daily  = await eco.daily(sender, "Venom", 500); //give 500 for daily, can be changed
         if (daily.cd) { //cdL is already formatted cooldown Left
           return await reply(`🧧 You already claimed daily for today, come back in ${daily.cdL}🫡`);
         } else { reply(`you claimed daily ${daily.amount} 🪙 for today🎉.`);  }
@@ -146,7 +146,7 @@ async(message,match) => {
        case '1000':
        case '1':
        if (k > balance.wallet ) return message.reply(`*_You need to pay 🪙100 to increase bank capacity ~ 1000 sp_*`);
-         const deduct1 = await eco.deduct(user, "Suhail", 100);
+         const deduct1 = await eco.deduct(user, "Venom", 100);
          const add1 = eco.giveCapacity(user,"Suhail", 1000);
          return await message.reply(`*1000 🪙diamond storage has been added in ${message.senderName} bank*`)
 
@@ -155,8 +155,8 @@ async(message,match) => {
        case '100000':
        case '2':
        if (k < balance.wallet) return message.reply(`*You need to pay 🪙1000 to increase bank capacity ~ 100000 sp*`);
-         const deduct2 = await eco.deduct(user,"Suhail", 1000);
-         const add2 = eco.giveCapacity(user, "Suhail", 100000);
+         const deduct2 = await eco.deduct(user,"Venom", 1000);
+         const add2 = eco.giveCapacity(user, "Venom", 100000);
          return await message.reply(`*100000 🪙diamond storage has been added in ${message.pushName} bank*`)
 
 
@@ -165,8 +165,8 @@ async(message,match) => {
        case '10000000':
        case '3':
        if (k < balance.wallet) return message.reply(`You need to pay 🪙10000 to increase bank capacity ~ 1000 sp`);
-          const deduct3 = await eco.deduct(user, "Suhail", 10000);
-          const add3 = eco.giveCapacity(user, "Suhail", 10000000);
+          const deduct3 = await eco.deduct(user, "Venom", 10000);
+          const add3 = eco.giveCapacity(user, "Venom", 10000000);
           return await message.reply(`*10000000 🪙diamond storage has been added in ${message.pushName}\'s bank*`)
 
 
@@ -197,8 +197,8 @@ await message.reply('*What are you trying to do📉*.')
      //  let users = message.mentionedJid ? message.mentionedJid[0] : message.msg.contextInfo.participant || false;
        if (!match) return message.reply("Baka!! Provide the 💰amount you want to deposit!");
        let d = parseInt(match)
-       const deposit = await eco.deposit(message.sender, "Suhail", d);
-       const balance = await eco.balance(message.sender, "Suhail")
+       const deposit = await eco.deposit(message.sender, "Venom", d);
+       const balance = await eco.balance(message.sender, "Venom")
        if(deposit.noten) return message.reply('You can\'t deposit what you don\'t have💰.'); //if user states more than whats in his wallet
        return await message.reply(`⛩️ Sender: ${message.pushName}\n🍀Successfully 💰Deposited 🪙${deposit.amount} to your bank.Upgrade your bank capacity to add more money📈.`)
    //return await Aviator.bot.sendButtonText(message.chat,  `⛩️ Sender: ${message.pushName}\n🍀Successfully 💰Deposited 🪙${deposit.amount} to your bank.Upgrade your bank capacity to add more money📈.`, `${Config.ownername.split(' ')[0]}-Economy Version: 0.0.6`, message);
@@ -214,7 +214,7 @@ await message.reply('*What are you trying to do📉*.')
    },
    async(message) => {
      try{
-   let h = await eco.lb("Suhail",10);
+   let h = await eco.lb("Venom",10);
    let str = `*Top ${h.length} users with more money in wallet.*\n`
    const { sck1 } = require('../lib');
    let arr = []
@@ -250,7 +250,7 @@ async(message,match) => {
        const code = value[1];
        let d = parseInt(word)
        if (!d) return message.reply("check your text plz u r using the command in a wrong way👀");
-       const balance = await eco.balance(user1, "Suhail");
+       const balance = await eco.balance(user1, "Venom");
        let a = (balance.wallet) < parseInt(word)
        //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
        if(a == true) return message.reply("you dont have sufficient money to transfer👎");
